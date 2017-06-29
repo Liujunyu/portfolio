@@ -1,0 +1,222 @@
+body { 
+	 padding-top: 20px;
+}
+
+.intro {
+	margin-top : 80px;
+	margin-bottom: 30px;
+	max-width : 940px;
+}
+
+#hello {
+	font-family: 'Noto Sans';
+	font-weight: 400;
+	font-size: 30px;
+	color: #404040;
+	margin-bottom: 18px;
+}
+
+#im {
+	font-family: 'Open Sans'; 
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 23px;
+}
+#im em {
+	font-style: normal;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+.mhcid-link{
+	text-decoration: none;
+	color: #FF53A0;
+}
+.groupon-link:hover {
+	text-decoration: none;
+	color: #B9E563;
+}
+.mhcid-link:hover {
+	text-decoration: none;
+	color: #B9E563;
+}
+#hr{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.work-header {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	border-left: solid 4px #B9E563;
+	padding-left: 10px;
+}
+#title {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 14px;
+}
+
+/*Caption Style*/
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption { 
+  font-size: 12px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  position: absolute; 
+  background: rgba(0,0,0,0.5); 
+  color: white; 
+  padding: 10px 20px; 
+
+  opacity: 0;
+  bottom: 0; 
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+@media all and (max-width: 768px) {
+	figcaption{
+		visibility: hidden;
+	}
+}
+
+/*Top Down Animation For Caption*/
+.cap-top figcaption { left: 0; top: -30%; }
+.cap-top:hover figcaption { top: 0; }
+
+/*Capstone project Thumbnail*/
+#capstone {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#portfolio-web-design {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#hitch-hiker {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+#stream {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#eatwell {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+#nudesign {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+
+#fizzapron {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+#find-it {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+#dub-website {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#ttt {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#hfb {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+#pencil {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+
+
+#more-portfolio {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom : 10px;
+}
+#more-portfolio-cap {
+	text-align: center;
+	padding-top: 5%;
+	padding-left: 2%;
+	width: 930px;
+}
+
+
+.footer-title {
+	color: #9BD325;
+	font-size: 13px;
+}
+.footer-text {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: italic; 
+	font-size: 13px;
+	color: #5D5D5D;
+}
+
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-link {
+	font-family: 'Open Sans';
+	font-style: italic;
+	text-decoration: none;
+	color: #FF53A0;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color: #B9E563;
+}

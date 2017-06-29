@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>UI Layout in VR - Junyu's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/webflow.css" rel="stylesheet" type="text/css">
+        <link href="css/junyuliu.webflow.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/overall.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <link rel="shortcut icon" href="img/icon.png">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+            <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+  </head>
+
+    <body id="portfolio">
+	
+	<div class="project-navbar w-nav" data-animation="default" data-collapse="tiny" data-contain="1" data-duration="400">
+      <div class="container w-container">
+        <a class="brand project-brand w-hidden-main w-hidden-medium w-hidden-small w-nav-brand" href="index.html"><img src="images/brand.png">
+        </a>
+        <nav class="nav-menu project-nav w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="the-golden-guardian.html">&lt;&nbsp;Previous</a><a class="nav-link w-nav-link" href="index.html">Home</a><a class="nav-link w-nav-link" href="files/resume.pdf" target="_blank">Resume</a><a class="nav-link w-nav-link" href="mailto:junyu_liu@outlook">Email</a><a class="nav-link w-nav-link" href="UI-depth-in-VR.html">Next &gt;</a>
+        </nav>
+      </div>
+    </div>
+	
+    <div class="l-01">
+        <div class="container ">
+          <div class="col-sm-10 col-sm-offset-1 project-tagline">
+             <img src="img/layout/l-logo.png">
+             <p>The display of virtual reality covers full 360 degree. Unlike screen-based UI, a border is absent in VR-UI, which brings opportunites and challenges in UI design.</p>
+        </div>  
+       </div>
+    </div>
+
+  <!--section 1-->
+  	<div class="sk-03">
+        <div class="container">
+          <div class="col-xs-12 text-center sk-introduce">
+             <h2 class="s-problem-maintitle">Introduction</h2>
+			 <p class="bigger-p">Recently, the emmergence of head-mouted displays has broken the rule of graphic design and screen-based UI design. When we design VR-UI in a head-mounted display, we may meet the following problems.</p>
+          </div>
+        </div>
+		
+		  <div class="row sk-value">
+            <img src="img/layout/border.jpg" class="img-responsive col-sm-5 col-sm-offset-1">
+            <div class="col-sm-5">
+              <h2>Problem 1: The Border of UI is absent.</h2>
+              <p>For UI of desktop and mobile apps and websites, the border is the screen of devices. But for VR, the concept of screen has dispeared, which brings more opportunites and new challenges to designers. UI layout lacks a reference to determine the positions of the UI elements, and the size, position (including x,y,z axises) and even the shape need to be defined by designers. </p>
+			  <p>When we design a menu of VR-UI in unity, we can hardly find any problem in edit mode. But when we put on the head-mounted display, we will meet various kinds of problems such as oversize elements, large range of head turns and unfocused content. Designers have to test many times in HMD to ensure design quality.</p>
+			</div>
+          </div>
+          <div class="row sk-value">
+            <img src="img/layout/design software.png" class="img-responsive col-sm-5 col-sm-push-6">
+            <div class="col-sm-5 col-sm-pull-4 sk-airports">
+              <h2>Problem 2: NO Design Software for VR-UI.</h2>
+			  <p>Whether for App UI or for Web UI, the desgin draft is almost the same as what it look after being develped. But for VR, the design draft tends to be different from the finished product. When we design VR-UI, two ways are common used in the industry. The one is to use some graphic design softwares such as Sketch or PS to design the scenes and elements, and then deliver them to developers to implent. The other way is to desgin in a game engine such as Unity diretly. The former problem is that designers have to communicate with developers and modify their design again and again. The latter problem is that the threshold for designers is high just as they use html and css to design a website.</p>
+            </div>        
+          </div>
+		  
+        <div class="container">
+		  <p class="bigger-p">Focused on the two problems above, I have made a framework in VR according to some reference documents. This framework has normalized the visual focus to which designers arrange the elements, and it also improves the development efficiency. In the next section, I will introduce two important terms which are fundamental to VR-UI.</p>
+		</div>
+    </div>
+  
+   <!--section 2-->
+   <div class="section-grey">
+    <div class="container"> 
+      <div class="center section-title">
+		<h2 class="s-process-title text-center">FOV and PDD</h2>
+        <p class="center paragraph tp-16">FOV and PPD are fundamental concepts just like the term of PPI for mobile devices. The former one is an important ergonomic condition restricted by the physiology of eyes, while the latter one is restricted by the display performance of head-mounted dispay. These two conditions should be synthetically considered.</p>
+      </div>
+	  <br>
+		 	
+		  <div class="row sk-value">
+            <img src="img/layout\fov.png" class="img-responsive col-sm-5 col-sm-offset-1">
+            <div class="col-sm-5">
+              <h2>FOV (Field of View)</h2>
+              <p>FOV Stands for the range which we can see with our eyes. As shown, Angle a is the horizontal FOV, while Angle B is the vertical one. For head-mounted displays, FOV tends to stand for horizontal FOV because the vertical FOV of human eyes is much smaller than that of mainstream HMD. Human's horizontal FOV is about 120°, while that of mainstream HMD is between 90° to 110°. This is the reason why we can see the black shadow on both edges of our eyes.</p>
+			</div>
+          </div>
+          <div class="row sk-value">
+            <img src="img/layout/ppd.png" class="img-responsive col-sm-5 col-sm-push-6">
+            <div class="col-sm-5 col-sm-pull-4 sk-airports">
+              <h2>PPD (Pixel per Degree)</h2>
+			  <p>PPD takes into account both the screen resolution and the FOV from which the device is viewed. To calculate PPD, we divide the screen resolution by the FOV. Only when the PPD is more than 60, we will see little graininess in a head-mounted display, while the PPD of current HMD is less than 13, for which many consumers are far from satisfaction.</p>
+			  <p>To take Oculus DK2 for example, its monocular resolution is 960px*1080px, and its FOV is 100°. So the PPD of Oculus DK2 is 960/100=9.6. Conversely, PPD can be used to calculate the pixels we can see in the vertical direction, which is 9.6 (PPD) * 55° (the FOV that human eyes stay still) = 528px, and it is much smaller than the vertical resolution of the screen, 1080px. In other words, both the top and bottom edges of the screen are blind spots in the first sight.</p>
+            </div>        
+          </div>
+
+	  <br>
+	  <p class="center paragraph tp-16">As is shown in the graph below, the horizontal FOV of static eyes is 120°, while that of rolling eyes is about 200°. The best horizotal FOV is 60°. On the other hand, the vertical FOV of static eyes is 55° (upward 25° and downward 30°), while that of rolling eyes is 120° (upward 50° and downward 70°). The best vertical FOV is 30°.</p>
+	  <img class="section-image" src="img\layout\fov and pdd.png">	
+	</div>
+	
+  </div>
+  
+  <!--section 3-->
+  <div class="section-white">
+    <div class="container">
+      <div class="center section-title">
+        <h2 class="s-process-title text-center">Framework</h2>
+        <p class="center paragraph">
+			As is mentioned above, we now know all the data of the best FOV and the maximal FOV. In fact, we need to turn them into pixels to contribute to our design. To take Oculus DK2 for example, if the PPD of the device is 9.6, the resolution corresponding to the best FOV is 576px (60*9.6=576).  The following diagram will show the other data of resolution related to FOV, and a canvas corresponding to the data will be given as well.
+        </p>
+      </div>
+	  <br>
+	  <img class="section-image" src="img\layout\data.png">
+	  <p class="image-caption meta">
+		<em>Distance-Related Reading Performance</em>
+      </p>
+	  <br>
+	  <p class="center paragraph tp-16">The canvas below is the frame work of UI layout in VR, and it is based on the UI of head reference frame.</p>
+	  <p class="center paragraph tp-16"><font color="#FF0000"><u>The red wireframe</u></font> represents what people can see in the device with rolling eyes.</p>
+	  <p class="center paragraph tp-16"><font color="#212121"><u>The black wireframe</u></font> stands for the monocular screen size of Oculus DK2.</p>
+	  <p class="center paragraph tp-16"><strong><font color="#BFBFBF">The grey area</font></strong> is the theoretical field of view. In fact, people can only see within the red wireframe, and outside the red wireframe they can see nothing but darkness. All the important and frequently viewed information should not be placed in this area, which is difficult to read and easy to cause eyestrain.</p>
+	  <p class="center paragraph tp-16"><strong><font color="#ADD8F7">The light blue area</font></strong> is what people can see without rolling eyes. It is proper to place UI elements in this area. On the one hand, the elements in this area are hard to cover the scene and disturb the main task. On the other hand, it is comfortable to read in this area.</p>
+	  <p class="center paragraph tp-16"><strong><font color="#108EE9">The dark blue area</font></strong> is the most comfortable field of view. When the main task of the user is to interact with the UI, important or frequently viewed elements can be placed in this area. But when the main task is not related to the UI, placing UI elements in this area may interfere with the user's action.</p>
+	  <img class="section-image" src="img\layout\canvas.jpg">
+	  <p class="image-caption meta">
+		<em>Oculus DK2 Canvas</em>
+      </p>
+	  <br>
+	  <p class="center paragraph tp-16">The following canvas is the simplified version which is more convenient for Unity Development. According to this framework, designers can position the elements, modify the structure and arrange the sequence more effectively, and developers can place the elements with less efforts.</p>
+      <img class="section-image" src="img\layout\framework.png">
+	  <p class="image-caption meta">
+		<em>Simplified Canvas</em>
+      </p>
+	</div>
+  </div>	
+	
+<!--section 4-->
+   <div class="section-grey">
+    <div class="container">
+      <div class="center section-title">
+        <h2 class="s-process-title text-center">Implementation</h2>
+        <p class="center paragraph tp-16">In the last section, a framework for UI layout in VR is introduced, but how to use it and how to integrate it to the Unity development? This section will elaborate these problems with the VR-UI design processes including before and after using the framework.</p>
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/layout/before1.png">
+				  </div>
+                  <h3 class="second-title text-center">before (design draft)</h3>
+                  <p>can only imagine the virtual environment and estimate the approximate position of the UI</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/layout/after1.png">
+				 </div>
+                    <h3 class="second-title text-center">after (design draft)</h3>
+                    <p>arrange the UI elements according to the framework, and provide reference to subsequent development</p>
+              </div>	
+			  	  		  
+	  </div>
+	 
+    </div>
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/layout/before2.png">
+				  </div>
+                  <h3 class="second-title text-center">before (development)</h3>
+                  <p>Estimate the relative position of the UI elements according to the design draft</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/layout/after2.png">
+				 </div>
+                    <h3 class="second-title text-center">after (development)</h3>
+					<p>- place the framework in the virtual environment and adjust its position</p>
+				    <p>- adjust the position of the UI elements according to the framework and the design draft</p>
+              </div>	
+			  	  		  
+	  </div>
+	 
+	</div>
+	
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/layout/before3.png">
+				  </div>
+                  <h3 class="second-title text-center">before (test)</h3>
+				  <p>- The upper and lower parts of UI cannot been seen in the first sight, although they are shown in the first screen. Some elements are even out of the screen.</p>
+				  <p>- To interact with the UI, the user has to turn his head by a wide range frequently, which can grow fatigue and cause sickness.</p>
+				  <p>- Did not come up to the expectations.</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/layout/after3.png">
+				 </div>
+                    <h3 class="second-title text-center">after (test)</h3>
+					<p>- The UI elements are clear and can be seen in the first sight.</p>
+					<p>- Did not have to turn the head.</p>
+					<p>	- Mostly consistent with the expectations.
+              </div>	
+  	  		  
+	  </div>
+	 
+	</div>
+	
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>	
+		<p class="center paragraph tp-16">Using the framework, the UI elements almost never need to be adjusted after the test. Before using the framework, however, developers have reposition the UI elements again and again. If the UI is complicate, the process may go back to the design draft.</p>	  
+	  </div>
+      
+	</div>
+  </div>	
+
+ <div class="section-white">
+	<div class="container">
+		<div class="center section-title">
+			<h2 class="s-process-title text-center">Conclusion</h2>
+			<p class="center paragraph tp-16"><p class="center paragraph tp-16">In the virtual environment, there is no border for the scene or other objects. For VR-UI, however, a border should be drawn due to the limit of our human eyes and current head-mounted display, and VR-UI should be placed in the area which is the intersection between human's FOV and HMD's FOV. Only in this way can we see the UI in the first sight.</p>	
+			<p class="center paragraph tp-16"><p class="center paragraph tp-16">For VR design software, it will continue to be absent in the short term. In order to improve the efficiency of design and development, related design guideline should be built. Besides the framework from this article, the specifications of the UI elements need to be elaborated in the future work.</p>	
+		</div>		  
+    </div>	
+		
+  </div>
+    
+ 	<div class="project-navbar w-nav" data-animation="default" data-collapse="tiny" data-contain="1" data-duration="400">
+      <div class="container w-container">
+        <a class="brand project-brand w-hidden-main w-hidden-medium w-hidden-small w-nav-brand" href="index.html"><img src="images/brand.png">
+        </a>
+        <nav class="nav-menu project-nav w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="index.html">&lt;&nbsp;Previous</a><a class="nav-link w-nav-link" href="index.html">Home</a><a class="nav-link w-nav-link" href="files/resume.pdf" target="_blank">Resume</a><a class="nav-link w-nav-link" href="mailto:junyu_liu@outlook">Email</a><a class="nav-link w-nav-link" href="UI-depth-in-VR.html">Next &gt;</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="text-center">
+        <p id="copyright">Copyright &copy; 2017 Junyu Liu. All Rights Reserved.</p>
+    </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>  
+      
+  </body>
+</html>

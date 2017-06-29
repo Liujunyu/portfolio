@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>UI Depth in VR - Junyu's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/webflow.css" rel="stylesheet" type="text/css">
+        <link href="css/junyuliu.webflow.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/overall.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <link rel="shortcut icon" href="img/icon.png">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+            <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+  </head>
+
+    <body id="portfolio">
+    <div class="project-navbar w-nav" data-animation="default" data-collapse="tiny" data-contain="1" data-duration="400">
+      <div class="container w-container">
+        <a class="brand project-brand w-hidden-main w-hidden-medium w-hidden-small w-nav-brand" href="index.html"><img src="images/brand.png">
+        </a>
+        <nav class="nav-menu project-nav w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="UI-layout-in-VR.html">&lt;&nbsp;Previous</a><a class="nav-link w-nav-link" href="index.html">Home</a><a class="nav-link w-nav-link" href="files/resume.pdf" target="_blank">Resume</a><a class="nav-link w-nav-link" href="mailto:junyu_liu@outlook.com">Email</a><a class="nav-link w-nav-link" href="library.html">Next &gt;</a>
+        </nav>
+      </div>
+    </div>
+    <div class="d-01">
+        <div class="container ">
+          <div class="col-sm-10 col-sm-offset-1 project-tagline">
+             <img src="img/depth/d-logo.png">
+             <p>UI depth in VR is a unique feature which can create stunning effects both in the level of information and visual style. While the distance, size and layer should be well considered.</p>
+        </div>  
+       </div>
+    </div>
+
+  <!--section 1-->
+  <div class="section-white">
+    <div class="container-flex">
+      <div class="center section-title">
+        <h2 class="s-process-title text-center">Introduction</h2>
+        <p class="center paragraph">
+			Recently, Microsoft (2017) has launched Fluent Design System, and some of the elements are specially created for head-mounted display (including MR, VR and AR). Compared with other screen-based displays, the head-mounted display can provide more depth information, which is the most different feature between traditional UI and VR UI. According to the feature of visual depth perception, what opportunities and challenges will we meet in UI design? The following sections are the points concluded from my experience and some references.
+        </p>
+      </div>
+	  <br>
+	  <img class="section-image" src="img\depth\depth.jpg">
+    </div>
+  </div>	
+  
+   <!--section 2-->
+   <div class="section-grey">
+    <div class="container">
+      <div class="center section-title">
+		<h2 class="s-process-title text-center">Depth for Comfortable Reading</h2>
+        <p class="center paragraph tp-16">The reason for which we can see both far and close objects depends on the thickness of crystalline lens.  The thicker the crystalline lens are, the more tension our eyes will suffer from. In Virtual Reality, how long does the distance make it comfortable to read the text without eyestrain? The following diagram is the reading performance In different distances.</p>
+      </div>
+	  <br>
+	  <img class="section-image" src="img\depth\diagram.png">
+	  <p class="image-caption meta">
+		<em>Distance-Related Reading Performance</em>
+      </p>
+	  <p class="center paragraph tp-16">In general, 1m to 3m is a comfortable reading distance. While it is easy to cause eye discomfort when UI or other objects are in a distance less than 0.5m.</p>
+    </div>
+  </div>
+  
+  <!--section 3-->
+  <div class="section-white">
+    <div class="container">
+      <div class="center section-title">
+        <h2 class="s-process-title text-center">Sense of 3D</h2>
+        <p class="center paragraph">
+			The keynote of Samsung Developer Conference (2014) indicates that the distance between 0.5m and 1m can bring strong sense of 3D. The closer the object is, the stronger 3D you will perceive. While the sense of 3D is weaken between the distance of 10m and 20m, and it does not vary much with the distance increasing. Beyond 20m the objects will become totally flat.
+        </p>
+      </div>
+	  <br>
+	  <img class="section-image" src="img\depth\samsung-3d-feeling.png">
+	  <p class="image-caption meta">
+		<em>Distance-Related Reading Performance</em>
+      </p>
+	  <p class="center paragraph tp-16">The sense of 3D directly affects our immersive experience.  If we create a scene in a certain room, the main objects in the scene would better be placed within 10m from the avatar. If we create a scene with plenty of room, some random objects can be placed on the path the avatar must go through. For example, the roller coaster in VR is of plenty room, and some objects like the billboard or other gadgets can be placed beside the track so as to strenthen the immersion.</p>
+    </div>
+  </div>	
+	
+<!--section 4-->
+   <div class="section-grey">
+    <div class="container">
+      <div class="center section-title">
+        <h2 class="s-process-title text-center">Front Size for Reading</h2>
+        <p class="center paragraph tp-16">In most cases in UI design, the minimal readable font size tends to be normalized in different platforms. For web, the minimal font size must be not smaller than 12 pixels, while that of the long text is 16 pixel. For mobile UI, the font size is usually between 20 to 42 pixels. Similarly, what is the standard of font size in VR UI? In order to elaborate this problem, some concepts will be drawn on from Google I/O (2017) as following.</p>
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/depth/font size and distance.png">
+				  </div>
+                  <h3 class="second-title text-center">font size and distance</h3>
+                  <p>Font size is the practical size of a font which can be measured by gauges. Distance is a numerical description of how far apart objects are. The distance will not affect the practicle font size.</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/depth/angular size.png">
+				 </div>
+                    <h3 class="second-title text-center">angular size</h3>
+                    <p>Angular size is an angular measurement describing how large a font appears from a given point of view. Regardless of different font sizes, two fonts may have the same angular size due to different distances.</p>
+              </div>	
+			  	  		  
+	  </div>
+	 
+    </div>
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/depth/minimal angular size.png">
+				  </div>
+                  <h3 class="second-title text-center">minimal angular size</h3>
+                  <p>For most mainstream head-mounted display, 1.375° is the minimal angular size for comfortable reading, no matter how far apart you are from the text.</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/depth/minimal font size.png">
+				 </div>
+                    <h3 class="second-title text-center">minimal font size</h3>
+                    <p>Minimal font size is positively related with distance. With the minimal angular size and the tangent function, the corresponding minimal font sizes can be easily figured out.</p>
+              </div>	
+			  	  		  
+	  </div>
+	 
+	</div>
+	
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>
+		
+			  <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/depth/distance-indepedent millimeter.png">
+				  </div>
+                  <h3 class="second-title text-center">distance-indepedent millimeter</h3>
+                  <p>Dmm is an angular unit which follows a millimeter as it scales off into the distance. Compared with degree, dmm can be calculated without tangent function.</p>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/depth/text size guideline.png">
+				 </div>
+                    <h3 class="second-title text-center">recommended text sizes</h3>
+                    <p>These recommended text sizes are readable for people with various eyesight qualities. This is a safe set of text sizes to use although pixel density may increase over time.</p>
+              </div>	
+  	  		  
+	  </div>
+	 
+	</div>
+	
+	<div class="container">
+	
+	  <div class="center section-title">
+		<br>	
+		<p class="center paragraph tp-16">Besides the size in Unity, designers also can use the same text sizes in Sketch. For example, the minimal font size is 24dmm, so designers can use 24px as the minimal font size in Sketch. After designers export the 1x size of the slices,  developers can import them into Unity without distortion. Google spares no effort to simplify the unit so as to reduce memory load for designers and developers, especially those annoying decimals.</p>	  
+	  </div>
+      
+	</div>
+  </div>	
+
+ <div class="section-white">
+	<div class="container">
+		<div class="center section-title">
+			<h2 class="s-process-title text-center">Layer of Depth</h2>
+			<p class="center paragraph tp-16">UI design tends to prioritize the information with contrast of elements, such as size, color, dark or light and texture. In VR UI, depth has become an emerging dimension which can attract our attention. With binocular effect, people are likely to notice the object close to themselves. The pictures below are an experiment I have conducted in a prototype. I created two planes in Unity, and one of them is much bigger but  farther than the other. The camera adjusted the angle so that two planes could be seen similar in size. I found out that the closer one is much attractive especially when I watched them with a HMD and rotated my head slightly.</p>	
+		</div>		  
+    </div>	
+			 <br>
+			 <div class="col-sm-6">
+				  <div align="center"> 
+					<img src="img/depth/monocular.png">
+				  </div>
+                  <h3 class="second-title text-center">Screen-Based Display</h3>
+              </div>
+              <div class="col-sm-6">
+				 <div align="center"> 
+					<img src="img/depth/binocular.png">
+				 </div>
+                    <h3 class="second-title text-center">Binocular Display</h3>
+              </div>	
+			  
+	<div class="container">
+		<div class="center section-title">
+			    <p class="center paragraph tp-16">With this mechanism, layer of depth can be used to emphasize important information. The following three points are the tips from my design experience:</p>
+				<p class="center paragraph tp-16">1. Different layers of depth can be considered as different information states. For example, when the gaze moves over the button layer, the layer should move inward by a certain distance.</p>
+				<p class="center paragraph tp-16">2. Too many layers should be avoided because it can contribute to frequent switches between far and close objects. Less than three layers are recommended.</p>
+				<p class="center paragraph tp-16">3. The difference of depth between two layers should not be too large. When it is more than 1.5 meters, viewers can easily suffer eyestrain.</p>	
+
+		</div>		  
+    </div>	
+	
+  </div>
+   
+  <div class="section-grey">
+	<div class="container">
+		<div class="center section-title">
+			    <h2 class="s-process-title text-center">Conclusion</h2>
+				<p class="center paragraph tp-16">To summarize for UI depth in VR, I can conclude as following three points, the distance, the font size and the layer respectively.</p>
+				<p class="center paragraph tp-16">1. For the distance, 1m to 3m is a comfortable reading distance. While UI in the distance less than 0.5m will cause eyestrain or UI in the distance more than 6m will be covered or invisible.</p>
+				<p class="center paragraph tp-16">2. For the font size, 24mm is a minimal font size in the distance of 1m, which can be considered as 24dmm. This number of the minimal font size can be used both in Sketch as pixel and in Unity as millimeter.</p>
+				<p class="center paragraph tp-16">3. For the layer, different layers of depth can stand for different information states. More than three layers in a small range or more than 1.5m between layers can contribute to eyestrain due to frequent switches of focus.
+</p>
+		</div>		  
+    </div>		  
+  </div>
+  
+  <div class="section-white">
+	<div class="container">
+		<div class="center section-title text-center">
+			<h2 class="s-process-title">Reference</h2>
+			<p class="reference">Microsoft, 2017, Fluent Design System, <a target="_blank" href="http://fluent.microsoft.com/">fluent.microsoft.com</a></p>	
+			<p class="reference">Samsung, 2014, Samsung Developer Connection, <a target="_blank" href="https://www.youtube.com/watch?v=XjnHr_6WSqo">www.youtube.com/watch?v=XjnHr_6WSqo</a></p>
+			<p class="reference">Google, 2017, Google I/O '17, <a target="_blank" href="https://www.youtube.com/watch?v=ES9jArHRFHQ">www.youtube.com/watch?v=ES9jArHRFHQ</a></p>			
+		</div>		  
+    </div>		  
+  </div>
+  
+    <div class="project-navbar w-nav" data-animation="default" data-collapse="tiny" data-contain="1" data-duration="400">
+      <div class="container w-container">
+        <a class="brand project-brand w-hidden-main w-hidden-medium w-hidden-small w-nav-brand" href="index.html"><img src="images/brand.png">
+        </a>
+        <nav class="nav-menu project-nav w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="UI-layout-in-VR.html">&lt;&nbsp;Previous</a><a class="nav-link w-nav-link" href="index.html">Home</a><a class="nav-link w-nav-link" href="files/resume.pdf" target="_blank">Resume</a><a class="nav-link w-nav-link" href="mailto:junyu_liu@outlook.com">Email</a><a class="nav-link w-nav-link" href="library.html">Next &gt;</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="text-center">
+        <p id="copyright">Copyright &copy; 2017 Junyu Liu. All Rights Reserved.</p>
+    </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>  
+      
+  </body>
+</html>
